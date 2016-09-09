@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "build": "gulp build",
-    "server": "live-server --port=3000"
+    "server": "live-server --port=3000 --open=./dist"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
