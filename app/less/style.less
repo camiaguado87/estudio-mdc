@@ -1,0 +1,50 @@
+@import 'grid';
+
+
+html,
+body {
+    font-family: 'Roboto','Railway',sans-serif;
+    color: #555;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 92%;
+}
+header.row {
+    line-height: 24px;
+    margin-top: 80px;
+}
+
+nav {
+    text-align: right;
+    ul li {
+        display: inline-block;
+        list-style: none;
+        padding: 15px 45px;
+        a {
+            font-weight: 300;
+            text-decoration: none;
+        }
+    }
+}
+
+section.hero {
+    height: 80vh;
+    margin-top: 80px;
+    h3 {
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 1.6;
+        padding-left: 40vw;
+        @media screen and (max-width:480px){
+            padding-left: 0;
+        }
+    }
+}

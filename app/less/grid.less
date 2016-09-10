@@ -1,0 +1,151 @@
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box
+}
+
+/* Set the width of the grid */
+.row {
+  width: 100%;
+  margin: 0px auto;
+}
+
+
+/* Attribute selector */
+[class*='col-'] {
+  float: left;
+ margin: 1% 0 1% 1.6%;
+}
+
+/* Floats last ".col-" to the right */
+[class*='col-']:last {
+  float: right
+}
+
+[class*='col-']:first-of-type {
+  margin-left:0;
+}
+/* Clearfix */
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+/* Main Widths */
+.col-1  { width: 100% }
+.col-2  { width: 49.2% }
+.col-3  { width: 32.26%}
+.col-4  { width: 23.8% }
+.col-5  { width: 18.72% }
+.col-6  { width: 15.33% }
+.col-7  { width: 12.91% }
+.col-8  { width: 11.1% }
+.col-9  { width: 9.68% }
+.col-10 { width: 8.56% }
+.col-11 { width: 7.63% }
+.col-12 { width: 6.86% }
+.col-66 { width: 66.13% }
+.col-75 { width: 74.6%}
+.col-58 { width:61.9%}
+
+/* Landscape mobile & down */
+@media (max-width: 480px) {
+  .no-mobile {
+  display: none
+}
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12,
+  .col-66,
+  .col-58,
+  .col-75 {
+    width: 100%;
+  }
+  [class*='col-'] {
+    margin: 0;
+    padding: 10px;
+  }
+    article img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Portrait tablet to landscape */
+
+@media (min-width: 480px) and (max-width: 800px) {
+  .no-mobile {
+  display: none;
+}
+[class*='col-']:first-of-type {
+  padding-left:1.6%;
+}
+  .col-4,
+  .col-6,
+  .col-8,
+  .col-10,
+  .col-12,
+  .col-75,
+  .col-25
+   {
+    width: 49.2% 
+  }
+
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-5,
+  .col-7,
+  .col-9,
+  .col-11,
+  .col-66,
+  .col-58{
+    width: 100%
+  }
+
+}
+
+/* Landscape to small desktop */
+@media (min-width: 800px) and (max-width: 1100px) {
+  
+  .col-7,
+  .col-3,
+  .col-75,
+  .col-25,
+  {
+    width: 100%
+  }
+
+  .col-4 {
+    width: 23.8%
+  }
+
+  .col-66 {
+    width: 66.13%
+  }
+ .col-3 {
+    width: 32.26%
+  }
+  .col-2,
+  .col-8,
+  .col-10,
+  .col-12 {
+    width: 49.2% 
+  }
+
+
+}
