@@ -9,6 +9,9 @@ var imagemin = require('gulp-imagemin'),
 var minifycss = require('gulp-minify-css');
 var less = require('gulp-less');
 var browserSync = require('browser-sync');
+var watch = require('gulp-watch');
+var livereload = require('gulp-livereload');
+
 
 gulp.task('browser-sync', function() {
   browserSync({
@@ -63,6 +66,11 @@ gulp.task('default', ['browser-sync'], function(){
   gulp.watch("./src/styles/**/*.less", ['styles']);
   gulp.watch("./src/scripts/**/*.js", ['scripts']);
   gulp.watch("*.html", ['bs-reload']);
+});
+
+gulp.task('watch', function () {
+    livereload.listen(4000);
+    gulp.watch('./src/styles/less/*.less', ['styles']);
 });
 
 gulp.task('build',['images','styles','scripts']);
