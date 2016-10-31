@@ -5,12 +5,12 @@ html,
 body {
     color: #555;
     font-family: 'Roboto','Railway',sans-serif;
+    line-height: 20px;
 }
 
 .wrapper {
     margin: 0 auto;
     max-width: 1440px;
-    width: 92%;
 }
 
 #logo {
@@ -21,9 +21,9 @@ body {
 nav {
     text-align: center;
     ul {
+        border-bottom: solid 1px #b6b6b6;
         font-size: 0;
         li {
-            border-bottom: solid 1px #b6b6b6;
             display: inline-block;
             list-style: none;
             padding: 15px 45px;
@@ -39,29 +39,44 @@ nav {
 
 section {
     min-height: 80vh;
+    padding: 40px 0 20px 0;
 }
 
 section.hero {
     height: 80vh;
-    margin-top: 80px;
-    div{
-         clear: both;
+    position: relative;
+    z-index: 0;
+    .hero-bg {
+        background: url(../images/ejemplo.jpg) no-repeat;
+        background-size: cover;
+        filter: grayscale(100%) brightness(50%);
+        left: 0;
+        min-height: 80vh;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;;
+    }
+    div {
+        clear: both;
     }
     h3 {
         color: snow;
-        font-size: 36px;
-        font-weight: 300;
+        float: initial;
+        font-size: 40px;
+        font-weight: lighter;
         line-height: 1.6;
+        margin-left: 20%;
+        margin-top: 20vh;
         padding: 0 15vw;
         position: absolute;
-        margin-left: 20%;
-        float:initial;
+        text-shadow: 1px 1px 1px #999;
     }
-    img{
+    img {
         height: auto;
-        max-width: 75%;
         margin-left: 15%;
-       }
+        max-width: 75%;
+    }
 }
 
 nav.not-scrolled {
@@ -70,112 +85,93 @@ nav.not-scrolled {
 }
 nav.scrolled {
     background: white;
+    box-shadow: 0 2px 5px #999;
     position: fixed;
     top: 0;
-    width: 92%;
+    width: 100%;
+    z-index: 2;
 }
 
-#areas{
-    max-width: 1200px;
+#areas {
+    background: #eee;
     margin-bottom: 50px;
-   
-    li{  
-         font-size: 16px;
+
+    li {
+        font-size: 16px;
         font-weight: 300;
-        text-decoration: none;
-        margin-bottom: 20px;
         list-style: none;
+        margin-bottom: 20px;
+        text-decoration: none;
     }
-    div{
-        max-width: 75%;
+    div {
         margin: auto;
+        max-width: 75%;
         padding: 0 0 0 0;
     }
-      h3 {
-        font-weight: lighter;
-        margin-bottom: 16px;
+    h2 {
+        font-size: 24px;
+        font-weight: 300;
     }
 }
-#colaboradores{
+#colaboradores {
     margin: auto;
     margin-bottom: 50px;
     max-width: 75%;
     padding: 20px 0;
-    li{
-        margin-bottom:60px;
-        list-style:none;        
+    li {
+        list-style: none;
+        margin-bottom: 60px;
     }
-    img{
-        width: 70px;
-        height: 70px;
-        float: left;
+    img {
         border-radius: 100%;
-        margin: auto;
         clear: both;
-        }
-
-    h3 {
-        font-weight: lighter;
-        margin-bottom: 16px;
+        float: left;
+        height: 70px;
+        margin: auto;
+        margin-right: 20px;
+        width: 70px;
     }
-    h2 { 
-         font-size: 16px;
+
+    h2 {
+        font-size: 24px;
         font-weight: 300;
-        text-decoration: none;
-        margin-bottom: 7px;
-        margin-left: 80px;
-        list-style: none;
-     }
-    p{
-         font-size: 12px;
+    }
+    h4 {
+        font-weight: lighter;
+    }
+    p {
+        font-size: 12px;
         font-weight: 300;
-        text-decoration: none;
-        margin-bottom: 7px;
-        margin-left: 80px;
-        list-style: none;
-        }
-   
+    }
 }
 
-#estudio{
+#estudio {
     margin: auto;
     margin-bottom: 50px;
     max-width: 75%;
-    li{
-        margin-bottom:60px;
-        list-style:none;        
+    li {
+        list-style: none;
+        margin-bottom: 60px;
     }
-    img{
-        width: 70px;
-        height: 70px;
-        float: left;
+    img {
         border-radius: 100%;
-        margin: auto;
         clear: both;
-        }
-
-    h3 {
-        font-weight: lighter;
-        margin-bottom: 16px;
+        float: left;
+        height: 70px;
+        margin: auto;
+        width: 70px;
     }
-    h2 { 
-         font-size: 16px;
+
+
+    h2 {
+        font-size: 24px;
         font-weight: 300;
-        text-decoration: none;
-        margin-bottom: 7px;
-        margin-left: 80px;
-        list-style: none;
-        text-align: justify;
-     }
-    p{
-         font-size: 12px;
+    }
+    p {
+        font-size: 18px;
         font-weight: 300;
-        text-decoration: none;
-        margin-bottom: 7px;
-        margin-left: 80px;
-        list-style: none;
-        }
-   
+        line-height: 30px;
+    }
 }
 
 
