@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mariconde Díaz Centeno</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/style.min.css">
@@ -13,14 +13,18 @@
 <body>
 <div class="wrapper">
     <header class="row">
-        <div class="row center-text">
+        <div class="col-1 center-text">
             <img src="./dist/images/logo.png" id="logo" alt="Estudio MDC" title="Estudio MDC">
         </div>
+        <div class="mobile nav">
+            <i class="fa fa-bars"></i><h4>&nbsp;&nbsp;Menu</h4>
+        </div>
         <div class="row">
-            <nav>
+            <nav class="col-1">
                 <ul>
                     <li><a href="#estudio">Estudio</a></li>
-                    <li><a href="#areas">Areas de Practica</a></li>
+                    <li><a href="#areas">Áreas de conocimiento</a></li>
+                    <li><a href="#socios">Socios</a></li>
                     <li><a href="#colaboradores">Colaboradores/Asesores</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
@@ -31,167 +35,196 @@
         <section class="hero">
             <div class="hero-bg"></div>
             <h3 class="col-1">
-                Estudio Mariconde Díaz Centeno agregar algun texto de referencia
+                Estudio Mariconde Díaz Centeno<br><br><span>Confianza, trayectoria y profesionalismo.</span>
             </h3>
         </section>
-        <section id="estudio">
-            <div class="col-2">
-                <h2>Estudio</h2>
-            </div>
-            <div class="col-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum augue erat, non volutpat tellus
-                    rhoncus non. Sed dolor tellus, consectetur non ornare ac, ultrices ac lacus. Suspendisse ac sem
-                    purus. Curabitur nec porttitor ligula. In commodo magna lacus, vitae vulputate nunc auctor sit amet.
-                    Suspendisse tellus diam, tincidunt sed volutpat et, elementum vel magna. Vivamus tempor ut elit ac
-                    fermentum. Vivamus fringilla ipsum in dui mattis cursus. Donec dapibus nisl risus, et suscipit massa
-                    ullamcorper posuere. Donec sit amet consectetur quam, eu auctor diam. Nullam nibh erat, rhoncus sed
-                    purus id, aliquet vulputate lectus. Proin dictum nulla quam, vitae dapibus neque sollicitudin ac.
-                    Cras erat nunc, accumsan quis leo sed, commodo malesuada nisl.</p>
+        <section id="estudio" class="row">
+            <div class="container">
+                <h2>EL ESTUDIO</h2>
+                <div class="">
+                    <p>Nuestro estudio jurídico fue fundado en el año 1951 por el Dr. Jorge A. Clariá Olmedo y el Dr.
+                        Oscar
+                        D. Mariconde prestando sus servicios profesionales en todos los campos de la abogacía en forma
+                        continuada e ininterrumpida, contando con corresponsalías en todo el país.</p>
+                    <p>
+                        En la actualidad, ya se encuentra incorporada la tercera generación, conservando la alta
+                        jerarquía
+                        profesional de los socios fundadores, concentrando la actividad en el Derecho Civil, Comercial,
+                        Bancario, Tributario y Administrativo, habiendo desarrollado un importante departamento de
+                        gestión
+                        de cobranzas judiciales y extrajudiciales.</p>
+                    <p>
+                        La experiencia acumulada durante tres generaciones y la sumatoria de calificados asesores
+                        externos
+                        en cuestiones de familia y derecho penal, armonizan para ofrecer un servicio de asesoramiento
+                        legal
+                        experto e idóneo.</p>
+                    <p>
+                        Igual jerarquía mantienen nuestros corresponsales de todo el país, a efectos de mantener y
+                        afianzar
+                        una debida prestación de servicios.</p>
+                    <p>
+                        Entendemos que lo esencial es conservar una cuestión de "estilo" propuesta desde mediados del
+                        siglo
+                        pasado por nuestros socios fundadores.
+                    </p>
+                </div>
             </div>
         </section>
         <section id="areas" class="row">
             <div class="hero-bg"></div>
-            <div class="container">
+            <div class="container row">
                 <div class="col-3">
                     <h2>Areas de práctica</h2>
                 </div>
                 <div class="col-3">
-
                     <ul>
                         <li>
-                            Derecho bancario
+                            <i class="fa fa-check" aria-hidden="true"></i><a href="#area13"
+                                                                             rel="modal:open">Ambiental</a>
                         </li>
                         <li>
-                            Concursos y quiebras
+                            <i class="fa fa-check" aria-hidden="true"></i><a href="#area14" rel="modal:open">Arbitraje y
+                            mediación</a>
                         </li>
                         <li>
-                            Contratos comerciales
+                            <i class="fa fa-check" aria-hidden="true"></i><a href="#area1" rel="modal:open">Bancario</a>
                         </li>
                         <li>
-                            Defensa al consumidor
+                            <i class="fa fa-check" aria-hidden="true"></i><a href="#area2" rel="modal:open">Concursos y
+                            quiebras</a>
                         </li>
                         <li>
-                            Derecho civil
+                            <i class="fa fa-check" aria-hidden="true"></i><a href="#area3" rel="modal:open">Contratos
+                            comerciales</a>
                         </li>
                         <li>
-                            Derecho comercial
+                            <i class="fa fa-check" aria-hidden="true"></i><a href="#area4" rel="modal:open">Defensa del
+                            Consumidor</a>
                         </li>
                         <li>
-                            Derecho migratorio
-                        </li>
-                        <li>
-                            Asesoramiento legal en inglés
+                            <i class="fa fa-check" aria-hidden="true"></i><a href="#area5" rel="modal:open">Asesoramiento
+                            legal en idiomas extranjeros</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-3">
                     <ul>
                         <li>
-                            Familia y sucesiones
+                            <i class="fa fa-check" aria-hidden="true"></i><a href="#area6" rel="modal:open">Familia y
+                            sucesiones</a>
                         </li>
                         <li>
-                            Derecho laboral y de la seguridad social
+                            <i class="fa fa-check" aria-hidden="true"></i><a href="#area7" rel="modal:open">Laboral,
+                            Seguridad Social y Ley de Riesgos del Trabajo</a>
                         </li>
                         <li>
-                            Negocios inmobiliarios
+                            <i class="fa fa-check" aria-hidden="true"></i><a href="#area8" rel="modal:open">Litigios</a>
                         </li>
                         <li>
-                            Seguros
+                            <i class="fa fa-check" aria-hidden="true"></i> <a href="#area9" rel="modal:open">Negocios
+                            inmobiliarios</a>
                         </li>
                         <li>
-                            Derecho ambiental
+                            <i class="fa fa-check" aria-hidden="true"></i><a href="#area10" rel="modal:open">Seguros</a>
                         </li>
                         <li>
-                            Arbitraje y mediacion
+                            <i class="fa fa-check" aria-hidden="true"></i><a href="#area11"
+                                                                             rel="modal:open">Societario</a>
                         </li>
                         <li>
-                            Derecho societario
-                        </li>
-                        <li>
-                            Cobranzas y recupero de deudas
+                            <i class="fa fa-check" aria-hidden="true"></i><a href="#area12" rel="modal:open">Cobranzas y
+                            recupero</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
 
+        <section id="socios" class="row">
+            <div class="row container">
+                <div class="col-3">
+                    <h2>Socios</h2>
+                </div>
+                <div class="col-3">
+                    <li><img
+                            src="./dist/images/Foto_Dionisio_Centeno.jpg"/>
+                        <div class="nombre">
+                            <a href="#ex1" rel="modal:open"><h4>Dr. Dionisio Centeno</h4></a>
+                        </div>
+                    </li>
+                    <li><img
+                            src="./dist/images/Foto_Pablo_Mariconde.jpg"/>
+                        <div class="nombre">
+                            <a href="#ex2" rel="modal:open"><h4>Dr. Pablo L. Mariconde</h4></a>
+                        </div>
+                    </li>
+                    <li><img
+                            src="./dist/images/Foto_Jose_Javier_Diaz.jpg"/>
+                        <div class="nombre">
+                            <a href="#ex3" rel="modal:open"><h4>Dr. José Javier Díaz</h4></a>
+                        </div>
+                    </li>
+                    <li><img
+                            src="./dist/images/Foto_Jose_Javier_Diaz_(h).jpg"/>
+                        <div class="nombre">
+                            <a href="#ex4" rel="modal:open"><h4>Dr. José Javier Díaz Mañá</h4></a>
+                        </div>
+                    </li>
+                </div>
+                <div class="col-3">
+                    <li><img
+                            src="./dist/images/Foto_Dionisio_Centeno_(h).jpg"/>
+                        <div class="nombre">
+                            <a href="#ex5" rel="modal:open"><h4>Dr. Dionisio Centeno(h)</h4></a>
+                        </div>
+                    </li>
+                    <li><img
+                            src="./dist/images/Foto_Martin_Cruz_Mariconde.jpg"/>
+                        <div class="nombre">
+                            <a href="#ex6" rel="modal:open"><h4>Dr. Martin Cruz Mariconde</h4></a>
+                        </div>
+                    </li>
+                    <li><img
+                            src="./dist/images/Foto_Facundo_Centeno.jpg"/>
+                        <div class="nombre">
+                            <a href="#ex7" rel="modal:open"><h4>Dr. Facundo Centeno</h4></a>
+                        </div>
+                    </li>
+                    <li><img
+                            src="./dist/images/Foto_Esteban_Maria_Diaz.jpg"/>
+                        <div class="nombre">
+                            <a href="#ex8" rel="modal:open"><h4>Dr. Esteban María Díaz</h4></a>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </section>
         <section id="colaboradores" class="row">
-            <div class="col-3">
-                <h2>Colaboradores</h2>
-            </div>
-            <div class="col-3">
-                <li><img
-                        src="./dist/images/Foto_Dionisio_Centeno.jpg">
-                    <div>
-                        <h4>Abogado Apellido</h4>
-                        <p>Abogado civil</p>
-                        <p>0351-157912536</p>
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="col-3">
+                    <h2>Colaboradores</h2>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-3">
+                            Colaborador 1
+                        </div>
+                        <div class="col-3">
+                            Colaborador 2
+                        </div>
+                        <div class="col-3">
+                            Colaborador 3
+                        </div>
                     </div>
-                </li>
-                <li><img
-                        src="./dist/images/Foto_Esteban_Maria_Diaz.jpg">
-                    <div>
-                        <h4>Abogado Apellido</h4>
-                        <p>Abogado civil</p>
-                        <p>0351-157912536</p>
-                    </div>
-                </li>
-                <li><img
-                        src="./dist/images/Foto_Jose_Javier_Diaz.jpg">
-                    <div>
-                        <h4>Abogado Apellido</h4>
-                        <p>Abogado civil</p>
-                        <p>0351-157912536</p>
-                    </div>
-                </li>
-                <li><img
-                        src="./dist/images/Foto_Jose_Javier_Diaz_(h).jpg">
-                    <div>
-                        <h4>Abogado Apellido</h4>
-                        <p>Abogado civil</p>
-                        <p>0351-157912536</p>
-                    </div>
-                </li>
-            </div>
-            <div class="col-3">
-                <li><img
-                        src="./dist/images/Foto_Dionisio_Centeno_(h).jpg">
-                    <div>
-                        <h4>Abogado Apellido</h4>
-                        <p>Abogado civil</p>
-                        <p>0351-157912536</p>
-                    </div>
-                </li>
-                <li><img
-                        src="./dist/images/Foto_Martin_Cruz_Mariconde.jpg">
-                    <div>
-                        <h4>Abogado Apellido</h4>
-                        <p>Abogado civil</p>
-                        <p>0351-157912536</p>
-                    </div>
-                </li>
-                <li><img
-                        src="./dist/images/Foto_Facundo_Centeno.jpg">
-                    <div>
-                        <h4>Abogado Apellido</h4>
-                        <p>Abogado civil</p>
-                        <p>0351-157912536</p>
-                    </div>
-                </li>
-                <li><img
-                        src="./dist/images/Foto_Esteban_Maria_Diaz.jpg">
-                    <div>
-                        <h4>Abogado Apellido</h4>
-                        <p>Abogado civil</p>
-                        <p>0351-157912536</p>
-                    </div>
-                </li>
+                </div>
             </div>
         </section>
     </main>
 </div>
 <footer id="contacto">
-    <div class="footer-content row">
+    <div class="footer-content row container">
         <div class="col-2">
             <div class="row">
                 <h3>Contáctenos</h3>
@@ -230,7 +263,300 @@
         </div>
     </div>
 </footer>
+<div id="ex1" style="display:none;">
+    <h4>Dr. Dionisio Centeno</h4></br><p>Nació el 12 de Abril de 1958 en la ciudad de Córdoba, casado.</p>
+    <p>
+        Egresó de la Facultad de Derecho y Ciencias Sociales de la Universidad Nacional de Córdoba con el Título de
+        Abogado en Diciembre de 1983 ejerciendo la profesión en forma ininterrumpida hasta la fecha.</p>
+    <p>
+        Se especializó dentro de los campos de la abogacía en las áreas propias de las empresas comerciales modernas:
+        "Negociación colectiva por Empresa", "Entorno Contable y financiero de la Empresa", "Conflictos Societarios",
+        Facultades Fiscalizadoras de la Dirección General Impositiva" en la Universidad Austral.</p>
+    <p>
+        Se desempeñó como abogado en la Asesoría Letrada de la Caja de Previsión y Seguridad Social de Abogados y
+        Procuradores de la Provincia de Córdoba en el año 1984.</p>
+    <p>
+        Asesor del bloque de la U.C.D. en la Cámara de Diputados de la Provincia de Córdoba en los años 1988 a 1990.</p>
+    <p>
+        Secretario Relator de Comisiones de la Cámara de Diputados de la Provincia de Córdoba en los años 1990 a
+        1992.</p>
+    <p>
+        Director del Tribunal de Cuentas de la Provincia de Córdoba.</p>
+    <p>
+        Relator de la Comisión de Hacienda del Consejo Deliberante de la ciudad de Córdoba.</p>
+    <p>
+    </p>
+</div>
+<div id="ex3" style="display:none;">
+    <h4>Dr. José Javier Díaz</h4></br><p>Nació el 22 de Junio de 1964 en la ciudad de Córdoba, casado.</p>
+    <p>
+        Egresó de la Facultad de Derecho de la Universidad Católica de Córdoba con el Título de Abogado en marzo de
+        1987.</p>
+    <p>
+        Miembro titular en el “Proyecto de Código Procesal Civil y Comercial de Córdoba” organizado por el Colegio de
+        Abogados de Córdoba, el Ministerio de Gobierno y el Departamento</p>
+    <p>
+        Especializado en Derecho Bancario y Financiero en la Universidad Austral de Buenos Aires en el año 1997.
+        Socio fundador de Amparo Legal.</p>
+    <p>
+        Procurador del Ministerio de Trabajo de la Provincia de Córdoba (1988 - 1992).</p>
+    <p>
+        Fundador de la Cámara Turismo Cinegético de Córdoba.</p>
+    <p>
+        Fundador de la Cámara Argentina de Turismo Cinegético y Conservacionismo.</p>
+    <p>
+        Designado Juez de Primera Instancia en lo Civil y Comercial en el año 2004, magistratura que no asumió para
+        volcarse
+        al ejercicio autónomo de la profesión.</p>
+
+</div>
+<div id="ex8" style="display:none;">
+    <h4>Dr. Esteban María Díaz</h4></br><p>Nació el 2 de marzo de 1962 en la Ciudad de Córdoba, casado. Egreso de la
+    Facultad de Derecho de la
+    Universidad</p>
+    <p></p>
+    Nacional de Córdoba con el Título de Abogado y Procurador en Diciembre de 1989.</p><p>
+    Participante del VIII Encuentro Panamericano de Derecho Procesal.</p>
+    <p>
+        Miembro Asistente del Seminario de Legislación Cooperativa, dictada por Centro de Investigación y
+        Perfeccionamiento
+        en Administración Cooperativa, dictada en Universidad Católica de Córdoba.</p>
+    <p>
+        Integrante de Ateneo de Estudios Procesales de Córdoba, de Universidad Católica de Córdoba, en Ciclo de
+        Conferencias
+        sobre Nuevo Código Procesal Civil y Comercial de Córdoba.</p>
+
+
+</div>
+<div id="ex2" style="display:none;">
+    <h4>Dr. Pablo L. Mariconde</h4></br><p>Nació el 2 de Septiembre de 1968 en la ciudad de Córdoba, casado.</p>
+    <p>
+        Egresó de la Facultad de Derecho de la Universidad Nacional de Córdoba con el Título de Abogado en Diciembre de
+        1991.</p>
+    <p>
+        Adscripto de la Cátedra de Derecho Civil y Comercial de la Facultad de Derecho de la Universidad Nacional de
+        Córdoba.</p>
+    <p>
+        Postgrado de Derecho Procesal – Universidad Nacional de Córdoba.</p>
+    <p>
+        Fue Profesor de los Tribunales Experimentales del Colegio de Abogados de Córdoba (1995 – 2005).</p>
+    <p>
+        Procurador de la Municipalidad de Córdoba.</p>
+    <p>
+
+
+</div>
+<div id="ex6" style="display:none;">
+    <h4>Dr. Martin Cruz Mariconde</h4></br><p>Nació el 18 de de Enero de 1980 en la ciudad de Córdoba.</p>
+    <p>
+        Egreso de la Facultad de Derecho y Ciencias Sociales de la Universidad Nacional de Córdoba con el título de
+        Abogado
+        en Agosto de 2006, habiendo ganado experiencia en los Estudios Jurídicos Lozada Echenique y Asociados; Calderón
+        Arce
+        y Asociados; y en la Sala II de la Cámara del Trabajo.</p>
+    <p>
+        Diplomatura en Ley de Riesgos y cursos varios en Derecho del Trabajo y Derecho </p>
+    <p>
+        FCE (Cambridge University) 1999; TOEFL 2011</p>
+    <p>
+        Diploma en Negocios y Administración N.C.B.A. (Dublín – Irlanda) en 2014.</p>
+    <p>
+</div>
+<div id="ex4" style="display:none;">
+    <h4>Dr. José Javier Díaz Mañá (h)</h4></br><p>Nació el 28 de julio de 1993 en la ciudad de Córdoba.</p>
+    <p>
+        Egresado de la de Facultad de Derecho y Ciencias Sociales de la Universidad Católica de Córdoba con el título de
+        Abogado en febrero de 2016.</p>
+    <p>
+        First Certificate in English de la Cambridge University en el año 2010; Estudios primarios en Idioma Portugués
+        cursados durante tres años (2008, 2009,2010).</p>
+    <p>
+        Egresado del Colegio G.Taborin (2010); Egresado del British School (2010).</p>
+    <p>
+        Abogado interno de la Unión Obrera Metalúrgica.</p>
+    <p>
+        Profesor adscripto Contratos (UCC).</p>
+</div>
+<div id="ex5" style="display:none;">
+    <h4>Dr. Dionisio Centeno (h)</h4></br><p>Abogado, egresado de la Facultad de Derecho y Ciencias Sociales de la
+    Universidad Nacional de Córdoba en el año
+    2016.</p>
+    <p>
+        Egresado del Colegio Gabriel Taborin (2008); Egresado de Skills English Institute (1996-2007).</p>
+    <p> First Certificate in
+        English (Universidad de Cambridge - 2007); Estudios primarios en Idioma Portugués (2006-2008). </p>
+    <p>Disertante en
+        Congreso de Derecho Romano de la Universidad Nacional de Córdoba (2010).</p>
+    <p> Trabajó en la Secretaría Electoral de los
+        Tribunales Federales de Córdoba (2011). Área de Relaciones Institucionales de la Bolsa de Comercio de Córdoba
+        (2013-2014). </p>
+    <p>Curso de Productor Asesor de Seguros en A.P.A.S. Córdoba (2010).
+    </p>
+</div>
+<div id="ex7" style="display:none;">
+    <h4>Dr. Facundo Centeno</h4></br><p>Nació el 27 de Junio de 1991 en la ciudad de Córdoba.</p>
+    <p>
+        Productor Asesor de Seguros, matriculado desde el año 2013.</p>
+    <p>
+        Finalizó el cursado de la carrera de abogacía, en la Facultad de Derecho y Ciencias Sociales de la Universidad
+        Nacional de Córdoba en el año 2016.</p>
+    <p>
+        Egresado del Colegio Gabriel Taborin (2008); Egresado de Skills English Institute (1996-2007).</p>
+    <p> First Certificate in
+        English (Universidad de Cambridge - 2007); Estudios primarios en Idioma Portugués (2006-2008).</p>
+    <p>
+        Disertante en
+        Congreso de Derecho Romano de la Universidad Nacional de Córdoba (2010).</p>
+    <p>
+</div>
+<div id="area1" style="display:none;">
+    <h4>Bancario</h4></br><p>Los abogados de Mariconde Díaz Centeno dominan el derecho bancario y financiero brindando
+    asesoramiento
+    profesional tanto a entidades bancarias como a clientes particulares, ofreciendo rigor técnico y asesoramiento
+    práctico. Concretamente se orienta a los interesados respecto a la estructura y correcto funcionamiento dichas
+    entidades y a las operaciones y contratos bancarios realizados con el público en general, para lo que se trabaja
+    en conjunto con la colaboración externa de otros profesionales.
+</p>
+</div>
+<div id="area2" style="display:none;">
+    <h4>Concursos y quiebras</h4></br><p>Los profesionales de Mariconde Díaz Centeno representan a empresas que por
+    problemas financieros han recurrido al
+    remedio jurídico del concurso preventivo, obteniendo las conformidades necesarias para reestructurar el pasivo
+    de las mismas. Para ello se prioriza la subsistencia de la empresa logrando acuerdos favorables a tal propósito.
+    Entre los integrantes del estudio algunos de ellos se han desempeñado como abogados de síndicos de procesos
+    concursales.Igualmente se representa a acreedores que persiguen la verificación y el posterior cobro de sus
+    créditos.
+</p>
+</div>
+<div id="area3" style="display:none;">
+    <h4>Contratos comerciales</h4></br><p>El Estudio cuenta entre sus clientes a una cantidad de empresas, por lo tanto
+    se encarga de la redacción,
+    modificación y negociación de contratos comerciales. Se asesora a los clientes en todas las variantes de
+    contratos comerciales: compra, venta, distribución, agencia, franquicia, fideicomiso, leasing, entre otros.Del
+    mismo modo se asesora respecto a su aplicación y las distintas modalidades operativas que puedan surgir.
+    Posteriormente, ya en la etapa de ejecución, se acompaña al cliente controlando el cumplimiento de las
+    obligaciones contractuales y terminación de los contratos. Se brinda asimismo la representación necesaria en
+    caso de conflictos administrativos o judiciales que tengan origen contractual.
+</p>
+</div>
+<div id="area4" style="display:none;">
+    <h4>Defensa del consumidor</h4></br><p>Mariconde Díaz Centeno, a través de sus profesionales especializados, brinda
+    representación y asesoramiento en
+    todas las cuestiones suscitadas a partir de la ley de defensa del consumidor. Ya sea en procedimientos
+    administrativos o judiciales.
+    Se presta servicio a los productores, distribuidores y vendedores orientándolos con el objetivo de evitar y
+    prevenir los conflictos que caen bajo la órbita de la ley 24.240 y representándolos en todo proceso iniciado por
+    usuarios o consumidores.
+</p>
+</div>
+<div id="area5" style="display:none;">
+    <h4>Asesoramiento legal en idiomas extranjeros</h4></br><p>El estudio cuenta con abogados con una sólida solvencia
+    en sus habilidades lingüísticas. Siendo capaces de
+    comunicarse de forma oral y escrita con total fluidez, estableciendo una comunicación de forma clara y
+    detallada. Los conocimientos de los profesionales son certificados y respaldados por exámenes internacionales
+    TOEFL y de la Cambridge University del Reino Unido.</p>
+    <p>
+        De igual forma abogados del estudio tienen conocimientos primarios del idioma portugués, pudiendo comunicarse
+        tanto de manera oral como escrita. De esta manera el servicio del estudio no se ve acotado por barreras
+        idiomáticas.
+    </p>
+</div>
+<div id="area6" style="display:none;">
+    <h4>Familia y Sucesiones</h4></br><p>En Mariconde Díaz Centeno se asesora y representa a los clientes en cuestiones
+    sucesorias y de familia. Se
+    instruye sobre la elección y aplicación del régimen económico matrimonial, redacción de testamentos, solicitando
+    en caso de ser necesaria la declaración de herederos, procediendo a la división y adjudicación de herencias.
+    Para asuntos cuya complejidad lo demande, el estudio cuenta con asesores colaboradores externos.
+</p>
+</div>
+<div id="area7" style="display:none;">
+    <h4>Laboral, Seguridad Social y Ley de Riesgos del Trabajo</h4></br><p>Las prácticas del estudio se acomodan a
+    prevenir los conflictos de índole laboral, brindando una solución pronta
+    a la vez que efectiva y satisfactoria abarcando conflictos de toda naturaleza, ya sean conflictos colectivos o
+    individuales.Para ello los profesionales se consagran a la representación en juicios laborales, negociaciones
+    administrativas y acuerdos.</p>
+    <p>
+        Complementariamente se asesora en materia de contratación y reducción de personal.
+        Contamos con vasta experiencia en prevención de accidentes y enfermedades del Trabajo, como así también en
+        Higiene y seguridad en la empresa, contando también con colaboradores y asociados externos expertos en la
+        materia.
+    </p>
+</div>
+<div id="area8" style="display:none;">
+    <h4>Litigios</h4></br><p>El estudio Mariconde Díaz Centeno cuenta con una amplia trayectoria con la consecuente
+    experiencia en el ámbito
+    del litigio, principalmente en casos civiles y comerciales. Siendo está la impronta que le dieran sus fundadores
+    (Dr. Oscar Donato Mariconde y Dr. Jorge A. Clariá Olmedo) y que hoy en día se mantiene a pesar de haber ampliado
+    el campo de actuación del despacho. La experiencia de los abogados que integran el estudio abarca tanto casos
+    tramitados en sede provincial como así también en sede federal, incluyendo la Corte Suprema de Justicia de la
+    Nación. El campo de acción en el litigio abarcado por el estudio comprende primera instancia y la consiguiente
+    interposición y trámite de los múltiples recursos previstos por la ley procesal.
+</p>
+</div>
+<div id="area9" style="display:none;">
+    <h4>Negocios Inmobiliarios</h4></br><p>Se brinda asesoramiento a clientes en todo tipo de negocios inmobiliarios,
+    más específicamente en administración
+    y adquisición de propiedades. Se brinda un servicio integral, que va desde unir a compradores y vendedores para
+    la concreción del negocio, su correcto asesoramiento, la posterior confección de los contratos que hiciesen
+    falta, y un serio acompañamiento durante todo el proceso.
+</p>
+</div>
+<div id="area10" style="display:none;">
+    <h4>Seguros</h4></br><p>Para esta área específica se brinda el servicio de abogados con experiencia en materia de
+    daños y responsabilidad
+    civil. Así Mariconde Díaz Centeno ofrece su asistencia legal y técnica para representar a compañías de seguros
+    en las cuestiones originadas a partir de los contratos de seguros y reaseguros, ya sea en litigios o reclamos
+    administrativos. Se prioriza la negociación extrajudicial para de esa manera llegar a una solución que insuma la
+    mínima cantidad de recursos posible. Paralelamente, la prestación de servicios de asesoría legal a empresas que
+    encuentran dificultades a la hora de hacer efectivo el cobro de un siniestro.
+</p>
+</div>
+<div id="area11" style="display:none;">
+    <h4>Societario</h4></br><p>En Mariconde Díaz Centeno brindamos un asesoramiento integral que incluye desde la
+    correcta constitución e
+    inscripción de sociedades, sus posteriores modificaciones, un seguimiento en su giro habitual y cotidiano, hasta
+    su eventual disolución o terminación, abarcando también una hipotética participación de la sociedad en procesos
+    de concursos o quiebras. También asesoramos a nuestros clientes respecto a compras de empresas, financiamientos,
+    reestructuraciones, preparación de estructuras societarias, asuntos corporativos, elaboración de contratos
+    derivados, confección de actas y libros, etc.
+</p>
+</div>
+<div id="area12" style="display:none;">
+    <h4>Cobranzas y recupero</h4></br><p>El estudio brinda el servicio de cobranza y recupero de deudas tanto en el
+    ámbito judicial como en el
+    extra-judicial, intentando así lograr el mayor índice de recupero posible, abarcando ambas instancias.El estudio
+    Mariconde Díaz Centeno se encarga de realizar los trámites necesarios para gestionar las cobranzas de sus
+    clientes, mediante el tratamiento y recupero de la cartera de morosos. Los servicios ofrecidos al cliente
+    constituyen las distintas actividades destinadas al recupero. Para alcanzar tal fin realiza primeramente una
+    gestión extrajudicial y de ser necesario se encarga de la ejecución mediante la vía judicial.Se trata de
+    descubrir cuál es la naturaleza de la deuda a recuperar y de esta manera, hacer un manejo más efectivo de las
+    distintas herramientas con que contamos, en una relación más estrecha con la realidad.
+</p>
+</div>
+<div id="area13" style="display:none;">
+    <h4>Ambiental</h4></br><p>El área de derecho ambiental está encargada de brindar asesoramiento y asistencia jurídica
+    tanto a empresas como
+    a particulares en todo lo concerniente a cumplimentar normativas ambientales, ya sea de orden municipal,
+    provincial o nacional. Aunque el propósito principal de esta área es prevenir y minimizar los riesgos para así
+    evitar potenciales conflictos, se ha asesorado a clientes en litigios derivados de conflictos ambientales. La
+    representación se brinda a los clientes tanto en la etapa administrativa como en las sucesivas instancias
+    judiciales. El despacho orienta y obtiene los permisos requeridos por las autoridades de aplicación.</p>
+    <p>
+        Mariconde Díaz Centeno fundó la Cámara de Turismo Cinegético de Córdoba y La Cámara Argentina de Turismo
+        Cinegético, entidades a las que continúa asesorando constantemente en la materia.</p>
+    <p>
+        Secretario de la comisión de medio ambiente de la cámara de diputados de la provincia.
+    </p>
+</div>
+<div id="area14" style="display:none;">
+    <h4>Arbitraje y mediación</h4></br><p>Mariconde Díaz Centeno patrocina a sus clientes en las etapas arbitrales y de
+    mediación, contando con
+    profesionales idóneos en la materia. El arbitraje y la mediación favorecen al diálogo permitiendo así lograr
+    inmediatez entre las partes para imprimir celeridad al desarrollo del conflicto obteniendo una solución de forma
+    más expedita. De esta manera ofrece soluciones alternativas y menos desgastantes que la etapa judicial para la
+    resolución de los problemas que puedan tener sus clientes.
+</p>
+</div>
 </body>
 <script src="./dist/js/main.min.js "></script>
-
 </html>

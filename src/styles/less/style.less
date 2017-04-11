@@ -1,11 +1,13 @@
 @import 'grid';
 @import 'mixins';
+@import 'modal';
+@import './less/font-awesome';
 
 html,
 body {
   color: #555;
   font-family: 'Roboto', 'Railway', sans-serif;
-  line-height: 20px;
+  line-height: 1.6em;
 }
 
 .wrapper {
@@ -19,8 +21,16 @@ body {
   max-width: 100%;
 }
 
+div.container {
+  margin: 40px auto 0;
+  max-width: 75%;
+  padding: 30px 0 0 0;
+  flex: 1;
+}
+
 nav {
   text-align: center;
+  margin: 0 !important;
   ul {
     border-bottom: solid 1px #b6b6b6;
     font-size: 0;
@@ -29,7 +39,7 @@ nav {
       list-style: none;
       padding: 15px 45px;
       a {
-        color: #b6b6b6;
+        color: #555;
         font-size: 16px;
         font-weight: 300;
         text-decoration: none;
@@ -39,39 +49,42 @@ nav {
 }
 
 section {
-  min-height: 80vh;
-  padding: 40px 0 20px 0;
+  min-height: 100vh;
 }
 
 section.hero {
-  height: 80vh;
-  position: relative;
+  height: ~'calc(100vh - 190px)';
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 0;
+  position: relative;
   .hero-bg {
-    background: url(../images/Foto_Estudio_Mariconde_Diaz_Centeno.jpg) no-repeat;
+    background: url(../images/Foto_Estudio_Mariconde_Diaz_Centeno.jpg) no-repeat center;
     background-size: cover;
     filter: grayscale(100%) brightness(50%);
     left: 0;
-    min-height: 80vh;
+    min-height: 100%;
     position: absolute;
-    top: 0;
     width: 100%;
-    z-index: 0;;
+    top: 0;
+    z-index: 0;
   }
   div {
     clear: both;
   }
   h3 {
+    text-align: center;
     color: snow;
     float: initial;
     font-size: 55px;
     font-weight: lighter;
     line-height: 1.6;
-    margin-left: 20%;
-    margin-top: 20vh;
-    padding: 0 15vw;
-    position: absolute;
     text-shadow: 1px 1px 1px #999;
+    z-index: 1;
+    span {
+      font-size: 44px;
+    }
   }
   img {
     height: auto;
@@ -80,25 +93,31 @@ section.hero {
   }
 }
 
-nav.not-scrolled {
+.not-scrolled {
   position: relative;
   top: 0;
 }
 
-nav.scrolled {
-  background: white;
-  box-shadow: 0 2px 5px #999;
+.scrolled {
+  background: #efefef;
+  //box-shadow: 0 2px 5px #999;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
+}
+
+.fixed {
+  background: #efefef;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 #areas {
-  margin-bottom: 50px;
-  position: relative;
   .hero-bg {
-    background: url(../images/EJEMPLO.jpg) no-repeat;
+    background: url(../images/EJEMPLO.jpg) no-repeat center;
     background-size: cover;
     filter: grayscale(100%) brightness(50%);
     min-height: 100%;
@@ -107,22 +126,26 @@ nav.scrolled {
     z-index: -1;
   }
   color: white;
+  ul {
+    margin-top: 30px;
+  }
   li {
     font-size: 18px;
     font-weight: 300;
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-decoration: none;
     color: white;
     filter: none;
-    &:hover {
-      text-decoration: underline;
+    a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
-  }
-  div.container {
-    margin: auto;
-    max-width: 75%;
-    padding: 30px 0 0 0;
+
   }
   h2 {
     color: white;
@@ -131,11 +154,7 @@ nav.scrolled {
   }
 }
 
-#colaboradores {
-  margin: auto;
-  margin-bottom: 50px;
-  max-width: 75%;
-  padding: 20px 0;
+#socios {
   li {
     list-style: none;
     display: flex;
@@ -145,8 +164,8 @@ nav.scrolled {
   }
   img {
     border-radius: 100%;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
   }
 
   h2 {
@@ -160,12 +179,20 @@ nav.scrolled {
     font-size: 12px;
     font-weight: 300;
   }
+  .nombre {
+    max-width: 50%;
+    a {
+      color: #555;
+      text-decoration: none;
+      font-size: 18px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 #estudio {
-  margin: auto;
-  margin-bottom: 50px;
-  max-width: 75%;
   li {
     list-style: none;
     margin-bottom: 60px;
@@ -182,22 +209,26 @@ nav.scrolled {
   h2 {
     font-size: 32px;
     font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
   }
   p {
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
+    & + p {
+      margin-top: 15px;
+    }
   }
 }
 
 footer {
+  border-top: solid 5px white;
   background: #333;
   color: white;
   max-width: 1440px;
   .footer-content {
-    margin: auto;
     padding: 20px 0;
-    width: 75%;
   }
   h3 {
     font-weight: lighter;
@@ -215,10 +246,91 @@ footer {
   textarea {
     margin-bottom: 15px;
     padding: 2px 7px;
-    width: 180px;
+    width: 200px;
   }
   textarea {
     height: 50px;
     vertical-align: top;
+  }
+}
+
+#colaboradores {
+  .hero-bg {
+    background: url(../images/602.jpg) no-repeat center;
+    background-size: cover;
+    filter: grayscale(100%) brightness(50%);
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  color: white;
+  h2 {
+    font-size: 32px;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  #logo,
+  .container,
+  .footer-content {
+    padding: 0 10px;
+  }
+
+  header #logo {
+    margin: 15px 0;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  section.hero {
+    h3 {
+      font-size: 34px;
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .container h2 {
+    .center-text;
+    margin-bottom: 30px;
+  }
+
+  .mobile.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  #areas ul {
+    margin-top: 0;
+  }
+
+  footer .footer-content {
+    padding: 20px 10px;
+    input,
+    textarea {
+      width: 100%;
+      order: 2;
+      padding: 7px 12px;
+    }
+    .input-field {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      display: block;
+      order: 1
+    }
   }
 }
