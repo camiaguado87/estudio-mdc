@@ -26,6 +26,7 @@ $(document).ready(function () {
         if (window.innerWidth < 768) {
             $header.css('background', 'white');
             $('#areas .hero-bg').height($('#areas').height());
+            $('#colaboradores .hero-bg').height($('#colaboradores').height());
             if (offset > headerHeight) {
                 $header.addClass('scrolled');
             }
